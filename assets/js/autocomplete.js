@@ -96,8 +96,11 @@ function autocomplete(inp, arr) {
       });
 }
 
-var produtos = ["Lápis Gráfite", "Lápis de Cor","Caneta Preta","Caneta Azul","Caneta Vermelha", "Folha Sulfite A4 - Branca",
- "Folha Sulfite A3 - Branca","Folha Sulfite A4 - Colorida","Folha Sulfite A3 - Colorida"];
+var produtos = ["GARRAFA TERMICA,PRESSAO,1,8L", "GARFO DE COZINHA DE MESA,(180)MM",
+"DESCANSO PARA COPO,ACO INOX,(90X10)MM","CANECA DE ALUMINIO,CAPACIDADE(5,0L)",
+"JARRA DE ACO INOX,CAPAC.(1,5L)"];
 
+var fornecedores= ["CHANTEZ COMERCIO E SERVICOS LTDA - ME","COMERCIAL VIDANOVA DE UTILIDADES LTDA","MISSE AGRO FERRAMENTAS LTDA","MEGA DADOS COMERCIAL LTDA", "PEDRO AUGUSTO DA CRUZ - EMPORIO - ME"];
 
 autocomplete(document.getElementById("myInput"), produtos);
+autocomplete(document.getElementById("Fornecedores"), fornecedores)
