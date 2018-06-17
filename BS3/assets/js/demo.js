@@ -225,7 +225,7 @@ demo = {
     },
 
     initGoogleMaps: function(){
-        var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
+        var myLatlng = new google.maps.LatLng(-23.5506938,-46.6417462);
         var mapOptions = {
           zoom: 13,
           center: myLatlng,
