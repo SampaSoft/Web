@@ -35,7 +35,7 @@
                     </a>
                 </div>
                 <ul class="nav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="dashboard.html">
                             <i class="nc-icon nc-chart-pie-35"></i>
                             <p>Dashboard</p>
@@ -47,12 +47,7 @@
                             <p>Ordem de Compra</p>
                         </a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="./table.html">
-                            <i class="nc-icon nc-notes"></i>
-                            <p>Table List</p>
-                        </a>
-                    </li>
+                  
                     <li>
                         <a class="nav-link" href="./maps.html">
                             <i class="nc-icon nc-pin-3"></i>
@@ -161,11 +156,11 @@
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label>Justificativa</label>
-                                                    <textarea rows="4" cols="80" class="form-control" ></textarea>
+                                                    <textarea rows="4" cols="80" class="form-control"></textarea>
                                                 </div>
                                             </div>
                                         </div>
-                                        <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
+                                        <button type="submit" class="btn btn-info btn-fill pull-right">Cadastrar</button>
                                         <div class="clearfix"></div>
                                     </form>
                                </div>
@@ -186,22 +181,24 @@
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label>Produto:</label>
-                                                        <select>
+                                                    <br/>
+                                                      <select type="text" class="custom-select custom-select-lg mb-3">
                                                             <option></option>
-
+                                                            <option>Lápis</option>
+                                                            <option>Lápis Colorido</option>
+                                                            <option>Caneta Preta</option>
+                                                            <option>Caneta Azul</option>
+                                                            <option>Caneta Vermelha</option>
+                                                            <option>Folha A4 Branca</option>
+                                                            <option>Folha A4 Colorida</option>
+                                                            <option>Folha A3 Branca</option>
+                                                            <option>Folha A3 Colorida</option>
                                                         </select>
                                                 </div>
                                             </div>
                                         </div>
-                                     <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label>Justificativa</label>
-                                                    <textarea rows="4" cols="80" class="form-control" ></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
+                                
+                                        <button type="submit" class="btn btn-info btn-fill pull-right">Submeter</button>
                                         <div class="clearfix"></div>
                                     </form>
                                 </div>
@@ -209,52 +206,91 @@
                         </div>
                     </div>
                 </div>
-            </div> 
-
-
-
-
-
-
-            <div class="col-md-4">
-                            <div class="card card-user">
-                                <div class="card-image">
-                                    <img src="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400" alt="...">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card strpied-tabled-with-hover">
+                                <div class="card-header ">
+                                    <h4 class="card-title">Striped Table with Hover</h4>
+                                    <p class="card-category">Here is a subtitle for this table</p>
                                 </div>
-                                <div class="card-body">
-                                    <div class="author">
-                                        <a href="#">
-                                            <img class="avatar border-gray" src="../assets/img/faces/face-3.jpg" alt="...">
-                                            <h5 class="title">Mike Andrew</h5>
-                                        </a>
-                                        <p class="description">
-                                            michael24
-                                        </p>
-                                    </div>
-                                    <p class="description text-center">
-                                        "Lamborghini Mercy
-                                        <br> Your chick she so thirsty
-                                        <br> I'm in that two seat Lambo"
-                                    </p>
-                                </div>
-                                <hr>
-                                <div class="button-container mr-auto ml-auto">
-                                    <button href="#" class="btn btn-simple btn-link btn-icon">
-                                        <i class="fa fa-facebook-square"></i>
-                                    </button>
-                                    <button href="#" class="btn btn-simple btn-link btn-icon">
-                                        <i class="fa fa-twitter"></i>
-                                    </button>
-                                    <button href="#" class="btn btn-simple btn-link btn-icon">
-                                        <i class="fa fa-google-plus-square"></i>
-                                    </button>
+                                <div class="card-body table-full-width table-responsive">
+                                    <table class="table table-hover table-striped">
+                                        <thead>
+                                            <th>#</th>
+                                            <th>Produto</th>
+                                            <th>Valor Médio </th>
+                                            <th>Menor Preço</th>
+                                            <th>Qtd</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Lápis</td>
+                                                <td>$36,738</td>
+                                                <td>Niger</td>
+                                                <td>Oud-Turnhout</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Minerva Hooper</td>
+                                                <td>$23,789</td>
+                                                <td>Curaçao</td>
+                                                <td>Sinaai-Waas</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Sage Rodriguez</td>
+                                                <td>$56,142</td>
+                                                <td>Netherlands</td>
+                                                <td>Baileux</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Philip Chaney</td>
+                                                <td>$38,735</td>
+                                                <td>Korea, South</td>
+                                                <td>Overland Park</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Doris Greene</td>
+                                                <td>$63,542</td>
+                                                <td>Malawi</td>
+                                                <td>Feldkirchen in Kärnten</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>Mason Porter</td>
+                                                <td>$78,615</td>
+                                                <td>Chile</td>
+                                                <td>Gloucester</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <footer class="footer">
+                        <div class="modal" tabindex="-1" role="dialog">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Modal body text goes here.</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                                    <footer class="footer">
                 <div class="container">
                     <nav>
                         <ul class="footer-menu">
