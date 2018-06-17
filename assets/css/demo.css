@@ -158,6 +158,11 @@
     background-color: #9368E9;
 }
 
+.fixed-plugin .badge-grey {
+    background-color: #7EFF87;
+}
+
+
 .fixed-plugin h5 {
     font-size: 14px;
     margin: 10px;

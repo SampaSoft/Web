@@ -187,13 +187,13 @@ demo = {
         Chartist.Pie('#chartPreferences', dataPreferences, optionsPreferences);
 
         Chartist.Pie('#chartPreferences', {
-            labels: ['53%', '36%', '11%'],
-            series: [53, 36, 11]
+            labels: ['56%', '44%'],
+            series: [56, 44]
         });
 
 
         var dataSales = {
-            labels: ['9:00AM', '12:00AM', '3:00PM', '6:00PM', '9:00PM', '12:00PM', '3:00AM', '6:00AM'],
+            labels: ['9:00', '12:00', '15:00', '18:00', '21:00', '00:00', '3:00', '6:00'],
             series: [
                 [287, 385, 490, 492, 554, 586, 698, 695, 752, 788, 846, 944],
                 [67, 152, 143, 240, 287, 335, 435, 437, 539, 542, 544, 647],
@@ -201,26 +201,6 @@ demo = {
             ]
         };
 
-        // var optionsSales = {
-        //   lineSmooth: false,
-        //   low: 0,
-        //   high: 800,
-        //    chartPadding: 0,
-        //   showArea: true,
-        //   height: "245px",
-        //   axisX: {
-        //     showGrid: false,
-        //   },
-        //   axisY: {
-        //     showGrid: false,
-        //   },
-        //   lineSmooth: Chartist.Interpolation.simple({
-        //     divisor: 6
-        //   }),
-        //   showLine: false,
-        //   showPoint: true,
-        //   fullWidth: true
-        // };
         var optionsSales = {
             lineSmooth: false,
             low: 0,
@@ -250,18 +230,67 @@ demo = {
 
         var chartHours = Chartist.Line('#chartHours', dataSales, optionsSales, responsiveSales);
 
+
+
+
+
+        var dataMuni = {
+            labels: ['9:00', '12:00', '15:00', '18:00', '21:00', '00:00', '3:00', '6:00'],
+            series: [
+                [300, 490, 500,677 , 690, 730,780 , 785, , 788, 846, 944],
+                [67, 152, 143, 240, 287, 335, 435, 437, 539, 542, 544, 647],
+                [23, 113, 67, 108, 190, 239, 307, 308, 439, 410, 410, 509]
+            ]
+        };
+
+        var optionsMuni = {
+            lineSmooth: false,
+            low: 0,
+            high: 800,
+            showArea: true,
+            height: "245px",
+            axisX: {
+                showGrid: false,
+            },
+            lineSmooth: Chartist.Interpolation.simple({
+                divisor: 3
+            }),
+            showLine: false,
+            showPoint: false,
+            fullWidth: false
+        };
+
+        var responsiveMuni = [
+            ['screen and (max-width: 640px)', {
+                axisX: {
+                    labelInterpolationFnc: function(value) {
+                        return value[0];
+                    }
+                }
+            }]
+        ];
+
+        var chartMuni = Chartist.Line('#chartMuni', dataMuni, optionsMuni, responsiveMuni);
+
+
+
+
+
+
+
+
+
         // lbd.startAnimationForLineChart(chartHours);
 
         var data = {
-            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            labels: ['< 18', '18-20', '20-25', '25-30', '30-35', '35-40', '40-45', '45-59', '50+'],
             series: [
-                [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895],
-                [412, 243, 280, 580, 453, 353, 300, 364, 368, 410, 636, 695]
+                [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895]
             ]
         };
 
         var options = {
-            seriesBarDistance: 10,
+            seriesBarDistance: 5,
             axisX: {
                 showGrid: false
             },
